@@ -5,6 +5,8 @@ if(!localStorage.getItem('asientos')){
 }else{
     asientos = JSON.parse(localStorage.getItem('asientos'));
 }
+
+
     // Redirigir al usuario a la página de asientos disponibles
 function mostrarAsientosDisponibles() {
     localStorage.setItem('asientos', JSON.stringify(asientos));
